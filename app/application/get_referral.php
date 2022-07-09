@@ -7,7 +7,7 @@ $data = HCStudio\Util::getHeadersForWebService();
 $UserLogin = new GranCapital\UserLogin;
 $UserSupport = new GranCapital\UserSupport;
 
-if($UserLogin->_loaded === false || $UserSupport->_loaded === true)
+if($UserLogin->logged === false || $UserSupport->_loaded === true)
 {
     if($data['user_login_id'])
     {

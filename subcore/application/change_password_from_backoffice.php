@@ -12,7 +12,7 @@ $returnData['confirm_password'] = HCStudio\Util::getVarFromPGS('confirm_password
 
 $UserLogin = new GranCapital\UserLogin(true);
 
-if($UserLogin->_loaded === true)
+if($UserLogin->logged === true)
 {
 	if($returnData['current_password']){
 		if($returnData['password']){

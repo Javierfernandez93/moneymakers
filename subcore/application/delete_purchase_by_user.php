@@ -11,7 +11,7 @@ $returnData = Array();
 $returnData['buy_per_user_login'] = HCStudio\Util::getVarFromPGS('buy_per_user_login');
 $UserLogin = new GranCapital\UserLogin;
 
-if($UserLogin->_loaded === true)
+if($UserLogin->logged === true)
 {
 	if($returnData["buy_per_user_login"]){
 		$BuyPerUser = new GranCapital\BuyPerUser();

@@ -21696,7 +21696,7 @@ label,
 }
 
 .bg-gradient-light {
-  background-image: linear-gradient(310deg, #CED4DA 0%, #EBEFF4 100%);
+  background-image: linear-gradient(0deg, #FFFFFF 0%, #EAF6F6 100%);
 }
 
 .bg-gradient-dark {
@@ -22276,9 +22276,6 @@ hr.horizontal.gray-light {
   }
 }
 
-.navbar {
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.16);
-}
 
 .navbar .navbar-brand {
   color: #344767;

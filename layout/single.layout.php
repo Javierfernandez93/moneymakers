@@ -17,7 +17,7 @@
     <script src="<?php echo HCStudio\Connection::$protocol;?>://<?php echo HCStudio\Connection::$proyect_url;?>/src/js/jquery-3.1.1.js" type="text/javascript"></script>
     <script src="<?php echo HCStudio\Connection::$protocol;?>://<?php echo HCStudio\Connection::$proyect_url;?>/src/js/wow.js" type="text/javascript"></script>
     <?php
-      if($UserLogin->_loaded === true){?>
+      if($UserLogin->logged === true){?>
         <script src="<?php echo HCStudio\Connection::$protocol;?>://<?php echo HCStudio\Connection::$proyect_url;?>/src/js/tooltip.js" type="text/javascript"></script>
     <?php } ?>
     <!-- boostrap v4 -->

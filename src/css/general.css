@@ -50,3 +50,53 @@ body {
     width: 7rem !important;
     height: auto !important;
 }
+.step:hover {
+    transform: scale(1.1);
+}
+.step,
+.step:hover {
+    transition: all ease-in-out 500ms;
+}
+.step {
+    position: relative;
+}
+.step:not(:nth-last-child(1)):after,
+.step:not(:nth-last-child(1)):before
+{
+    content: '';
+    display: inline-block;
+    width: 20%;
+    height: 1px;
+    border-bottom: 1px dashed var(--bs-color-gray-20);
+    position: absolute;
+    top: 50%; 
+}
+.step:not(:nth-last-child(1)):before
+{
+    right: 0%;
+}
+.step:not(:nth-last-child(1)):after
+{
+    left: 100%;
+}
+
+.mm-session,
+.mm-session:hover,
+.mm-session:hover .text-primary,
+.mm-session .text-primary,
+.mm-session:hover .text-dark,
+.mm-session .text-dark {
+    transition: all ease-in-out 200ms;
+}
+.mm-session:hover .text-primary {
+    color: white !important;
+}
+.mm-session:hover .text-dark {
+    color: white !important;
+}
+.mm-session:hover {
+    box-shadow: 3px 12px 22px var(--bs-color-gray-50) !important;
+    background-color: var(--bs-color-primary) !important;
+    transform: scale(1.07);
+    color: white;
+}

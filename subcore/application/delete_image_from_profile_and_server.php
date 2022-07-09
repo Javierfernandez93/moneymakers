@@ -11,7 +11,7 @@ $returnData['image'] = HCStudio\Util::getVarFromPGS('image');
 
 $UserLogin = new Talento\UserLogin(true);
 
-if($UserLogin->_loaded === true)
+if($UserLogin->logged === true)
 {
 	if($returnData['image']){
 		// /apps/backoffice/subcore/media/images/

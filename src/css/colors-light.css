@@ -1,0 +1,14 @@
+/* light */
+/* :root {
+    --bs-color-light: #EAF6F6;
+    --bs-color-gray-20: rgba(0,0,0,0.2);
+    --bs-color-gray-05: rgba(0,0,0,0.05);
+    --bs-color-primary: #0066FF;
+} */
+
+.bg-light {
+    background-color: var(--bs-color-light) !important;
+}
+.text-primary {
+    color: var(--bs-color-primary) !important;
+}

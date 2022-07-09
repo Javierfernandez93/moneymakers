@@ -6,7 +6,7 @@ $Layout = JFStudio\Layout::getInstance();
 
 $UserLogin = new GranCapital\UserLogin;
 
-if($UserLogin->_loaded === false) {
+if($UserLogin->logged === false) {
 	HCStudio\Util::redirectTo(TO_ROOT."/apps/login/");
 }
 

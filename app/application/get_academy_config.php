@@ -8,14 +8,21 @@ $UserLogin = new GranCapital\UserLogin;
 
 if($UserLogin->logged === true)
 {
-    if($catalogCurrencies = (new GranCapital\CatalogCurrency)->getAll())
+    $Academy = new GranCapital\Academy;
+
+    $data['academy_id'] = 1;
+    
+    if($Academy->cargarDonde("academy_id = ?",$data['academy_id']))
     {
-        $data["catalogCurrencies"] = $catalogCurrencies;
+        $data["academy"] = [
+            'name' => $Academy->name,
+            'configs' => $Academy->loadConfigs($Academy->getId())
+        ];
         $data["s"] = 1;
         $data["r"] = "DATA_OK";
     } else {
         $data["s"] = 0;
-        $data["r"] = "NOT_TRANSACTIONS_FOUND";
+        $data["r"] = "NOT_ACADEMY";
     }
 } else {
 	$data["s"] = 0;

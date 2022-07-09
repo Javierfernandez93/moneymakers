@@ -77,6 +77,11 @@ class User extends Http {
     uploadImageProfile(data, progress, callback) {
         return this.callFile('../../app/application/upload_image_profile.php', data, callback, progress);
     }
+
+    /* mm */
+    getAcademyConfig(data, callback) {
+        return this.call('../../app/application/get_academy_config.php', data, callback);
+    }
 }
 
 export { User }

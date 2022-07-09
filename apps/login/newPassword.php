@@ -4,7 +4,7 @@ require_once TO_ROOT . "/system/core.php";
 
 $UserLogin = new GranCapital\UserLogin;
 
-if($UserLogin->_loaded === true) {
+if($UserLogin->logged === true) {
     HCStudio\Util::redirectTo(TO_ROOT."/apps/backoffice/");
 }
 
