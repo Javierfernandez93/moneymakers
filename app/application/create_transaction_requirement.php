@@ -6,6 +6,8 @@ $data = HCStudio\Util::getHeadersForWebService();
 
 $UserLogin = new GranCapital\UserLogin;
 
+d(1);
+
 if($UserLogin->logged === true)
 {
     if($data['ammount'])
